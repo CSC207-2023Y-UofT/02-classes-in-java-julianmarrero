@@ -157,7 +157,7 @@ public class Silly implements Comparable<Silly>{
          *                We've started it by checking the type of o for you.
          *                You just need to return true if the names are equal.
          */
-        answer = false
+        answer = false;
         if (!(o instanceof Silly)){
             answer = false;
         }
@@ -173,7 +173,7 @@ public class Silly implements Comparable<Silly>{
             }
         }   
         
-        return answer 
+        System.out.println(answer);
     }
 
     /**
