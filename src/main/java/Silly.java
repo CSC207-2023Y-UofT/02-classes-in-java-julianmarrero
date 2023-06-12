@@ -170,6 +170,7 @@ public class Silly implements Comparable<Silly>{
             else {
                 return false;
             }
+            return
         }   
     }
 
