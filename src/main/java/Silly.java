@@ -157,20 +157,23 @@ public class Silly implements Comparable<Silly>{
          *                We've started it by checking the type of o for you.
          *                You just need to return true if the names are equal.
          */
+        answer = false
         if (!(o instanceof Silly)){
-            return false;
+            answer = false;
         }
 
         Silly other = (Silly) o; // To access .name of o, we need to cast it.
+   
         
-        if (o instanceof Silly) {
-            if (other.name.equals(this.name)) {
-                return true;
+        if ((o instanceof Silly) & (other.name.equals(this.name))) {
+                answer = true;
             }
             else {
-                return false;
+                answer = false;
             }
         }   
+        
+        return answer 
     }
 
     /**
