@@ -137,7 +137,7 @@ public class Silly implements Comparable<Silly>{
     @Override
     public String toString(){
         // TODO (Task 3): Implement the body of this method!
-        System.out.println(this.name);
+        return this.name;
     }
 
     /**
@@ -170,9 +170,7 @@ public class Silly implements Comparable<Silly>{
             else {
                 return false;
             }
-        }    
-        // Hint: to compare strings, we need to use .equals()
-        //       e.g. s1.equals(s2)
+        }   
     }
 
     /**
